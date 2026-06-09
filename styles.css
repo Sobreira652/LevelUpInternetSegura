@@ -136,6 +136,13 @@ body {
     justify-content: center;
 }
 
+.hero-logo {
+    width: 300px;
+    height: auto;
+    border-radius: var(--border-radius);
+    animation: float 3s ease-in-out infinite;
+}
+
 .placeholder-image {
     width: 300px;
     height: 300px;
@@ -296,6 +303,12 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .gallery-item.placeholder {
     background: linear-gradient(135deg, rgba(26, 200, 237, 0.15), rgba(255, 107, 53, 0.15));
     display: flex;
@@ -387,10 +400,12 @@ body {
     font-style: italic;
 }
 
-.video-item iframe {
+.video-item iframe,
+.video-item video {
     width: 100%;
     height: 100%;
     border: none;
+    object-fit: cover;
 }
 
 /* ============================================
